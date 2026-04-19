@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  
+  <!-- Título da Aba -->
+  <title>Ateliê Schulze · Canecas que guardam histórias</title>
+
+  <!-- Favicon (Ícone da Aba) - Use o logocab ou crie um favicon.png quadrado -->
+  <link rel="icon" type="image/png" href="logocab.png">
+
+  <!-- Meta Tags Principais -->
+  <meta name="title" content="Ateliê Schulze · Canecas que guardam histórias">
+  <meta name="description" content="Transformamos suas memórias mais preciosas em arte feita à mão. Cada caneca conta uma história única.">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qg-digital.github.io/atelie-schulze/">
+  <meta property="og:title" content="Ateliê Schulze · Canecas que guardam histórias">
+  <meta property="og:description" content="Transformamos suas memórias em arte. Peças exclusivas feitas à mão com afeto.">
+  <meta property="og:image" content="https://qg-digital.github.io/atelie-schulze/share.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://qg-digital.github.io/atelie-schulze/">
+  <meta property="twitter:title" content="Ateliê Schulze · Canecas que guardam histórias">
+  <meta property="twitter:description" content="Transformamos suas memórias em arte. Peças exclusivas feitas à mão com afeto.">
+  <meta property="twitter:image" content="https://qg-digital.github.io/atelie-schulze/share.png">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="circuit-wrapper">
+  <div class="circuit-background"></div>
+  
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me/5543996349824?text=Ol%C3%A1!%20Gostaria%20de%20eternizar%20uma%20mem%C3%B3ria%20em%20uma%20caneca%20personalizada." target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <div class="content">
+    
+    <!-- Página Principal -->
+    <div id="main-page" class="page active">
+      <header>
+        <div class="navbar">
+          <div class="logo">
+            <img src="logocab.png" alt="Logo Ateliê Schulze">
+          </div>
+          <div class="nav-links">
+            <a href="#" onclick="showPage('main')">Início</a>
+            <a href="#" onclick="showPage('styles')">Estilos</a>
+            <a href="#processo">Processo</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+            <span class="social-header">
+              <a href="https://instagram.com/atelie_schulze" target="_blank"><i class="fab fa-instagram"></i></a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <section id="inicio">
+        <div class="hero">
+          <div class="hero-content">
+            <h1>Canecas que guardam histórias</h1>
+            <p class="subtitle">Cada peça é feita à mão com carinho, transformando suas memórias mais preciosas em arte que você pode abraçar todos os dias.</p>
+            <div class="hero-cta">
+              <a href="#contato" class="btn btn-primary"><i class="fas fa-paint-brush"></i> Quero minha caneca</a>
+              <a href="#" onclick="showPage('styles')" class="btn btn-outline">Ver estilos</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="caneca.png" alt="Caneca Ateliê Schulze">
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria">
+        <h2>Memórias eternizadas</h2>
+        <p class="subtitle" style="background:none; border-left-color: var(--warm);">Cada caneca conta uma história única</p>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section id="processo">
+        <h2>Do seu coração às nossas mãos</h2>
+        <p class="subtitle" style="background:none;">Um processo feito com cuidado em cada etapa</p>
+        <div class="steps" id="stepsContainer"></div>
+      </section>
+
+      <section id="sobre">
+        <h2>Amor em cada detalhe</h2>
+        <div class="about-wrapper">
+          <div class="about-text">
+            <p class="desc-sobre">
+              Cada caneca que sai do nosso ateliê carrega um pedaço de quem a encomendou.
+            </p>
+            <p class="desc-sobre">
+              Trabalhamos com técnicas artesanais, <strong>sem estampas prontas</strong>, porque acreditamos que <span class="marca-texto">histórias verdadeiras merecem arte verdadeira.</span>
+            </p>
+            <p class="frase-final">
+              "Transformamos saudade em arte, memórias em objetos que aquecem o coração todos os dias."
+            </p>
+          </div>
+          <div class="about-visual">
+            <img src="sobre.png" alt="Sobre o Ateliê Schulze">
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="text-center">
+        <h2>Vamos criar sua história</h2>
+        <p class="subtitle" style="background:none; margin: 0 auto 32px auto; border-left: none; border-bottom: 2px solid var(--detail);">Compartilhe sua memória e ganhe um orçamento sem compromisso</p>
+        <div class="contact-card">
+          <div class="contact-info">
+            <h3 style="font-size:2rem; margin-bottom:20px;"><i class="fas fa-comment-dots" style="color:var(--warm);"></i> Fale com a gente</h3>
+            <div class="contact-detail">
+              <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/5543996349824" style="color: var(--primary);">(43) 99634-9824</a></p>
+              <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> <a href="https://instagram.com/atelie_schulze" target="_blank" style="color: var(--primary);">@atelie_schulze</a></p>
+            </div>
+            <div class="hours">
+              <p><i class="far fa-clock"></i> <strong>Horário de atendimento</strong></p>
+              <p>Segunda a Sexta: 9h às 18h</p>
+              <p>Sábado: 9h às 13h</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div>© 2026 Ateliê Schulze · Todos os direitos reservados</div>
+        <div>Desenvolvido por <a href="https://wa.me/5543996349824">QG.Digital</a></div>
+      </footer>
+    </div>
+
+    <!-- Página de Estilos -->
+    <div id="styles-page" class="page">
+      <header>
+        <div class="navbar">
+          <div class="logo">
+            <img src="logocab.png" alt="Logo Ateliê Schulze">
+          </div>
+          <div class="nav-links">
+            <a href="#" onclick="showPage('main')">← Voltar</a>
+            <span class="social-header">
+              <a href="https://instagram.com/atelie_schulze" target="_blank"><i class="fab fa-instagram"></i></a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <h2>Estilos de arte</h2>
+        <p class="subtitle" style="background:none; border-left-color: var(--warm);">Inspire-se com nossas criações</p>
+        <div class="style-grid" id="styleGrid"></div>
+        <div class="text-center my-2">
+          <a href="#contato" onclick="showPage('main'); setTimeout(() => document.getElementById('contato').scrollIntoView({behavior: 'smooth'}), 100);" class="btn btn-primary">Quero minha caneca</a>
+        </div>
+      </section>
+
+      <footer style="margin-top: 60px;">
+        <div>© 2026 Ateliê Schulze · Todos os direitos reservados</div>
+        <div>Desenvolvido por <a href="https://wa.me/5543996349824">QG.Digital</a></div>
+      </footer>
+    </div>
+
+  </div>
+</div>
+
+<!-- Painel para ver a imagem grande (Lightbox) -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="Imagem ampliada">
+  </div>
+  
+<script src="script.js"></script>
+</body>
+</html>
